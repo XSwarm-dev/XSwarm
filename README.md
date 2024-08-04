@@ -19,8 +19,6 @@ This dual functionality creates a dynamic ecosystem where engagement meets autom
 - [Getting Started](#getting-started)
 - [Running XSwarm](#running-xswarm)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -56,6 +54,10 @@ Inspired by the vibrant raid culture within the Solana memecoin community, XSwar
 
 1. **Self-generated `.env` file:**
 
+    When you first run XSwarm, you'll need to add your wallet address (to collect rewards)
+   
+    ![image](https://github.com/user-attachments/assets/14083dae-60af-425c-8eb4-e8f01e270efa)
+
     A `.env` file will be created in the same directory as your executable and store the following variables:
 
     ```env
@@ -64,8 +66,46 @@ Inspired by the vibrant raid culture within the Solana memecoin community, XSwar
     SOUND=ON
     ```
 
-2. **Ensure you have the correct paths for the `chromedriver` and `chrome` binaries.**
+2. **Ensure you have the correct versions for the `chromedriver` and `chrome` binaries.**
 
+    XSwarm will download and setup Chrome browser, Chrome driver and the latest version of XSwarm agent manager.
+
+    ![image](https://github.com/user-attachments/assets/18a7d921-0928-48cf-bfb6-b4f0c6dbd131)
+
+3. **Add X accounts and monitor their activity**
+
+    XSwarm agent manager starts and you can add your X accounts credentials to the system.
+
+    ![image](https://github.com/user-attachments/assets/ccf808d2-42d5-4176-a81b-979ecd72f2b8)
+
+   Your passwords never leave your system. Your credentials are stored in an `agents.json` file in the same folder as XSwarm executable.
+
+    ```
+      {
+          "agents": [
+              {
+                  "handle": "AgentHandle1",
+                  "password": "P@ssword123"
+              },
+              {
+                  "handle": "AgentHandle2",
+                  "password": "Anoth3rP@ss"
+              },
+              {
+                  "handle": "AgentHandle3",
+                  "password": "Secur3P@ssword!"
+              },
+          ]
+      }
+    ```
+
+4. **That's it. XSwarm starts to raid posts by itself and collect rewards**
+
+  ![image](https://github.com/user-attachments/assets/e4fd6a2c-5b8a-4979-987f-ac0b294a2ecb)
+
+
+
+    
 ## Running XSwarm
 
 1. **Download the Executable:**
